@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+.btn-new {
+    margin-bottom: 10px;
+}
+
+.th-min-width {
+    min-width: 120px;
+}
+
+#content {
+    margin-top: 65px;
+}

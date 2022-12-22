@@ -1,0 +1,18 @@
+/* Replace bootstrap pagination css */
+.page-item.active .page-link {
+    background-color: #4da2b8 !important;
+    border-color: #117a8b !important;
+    color: #fff !important;
+}
+
+.page-link {
+    color: #808080 !important;
+}
+
+.page-link:hover {
+    color: #4da2b8 !important;
+}
+
+.card-pagination {
+    margin-top: 10px;
+}

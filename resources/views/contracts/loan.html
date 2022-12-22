@@ -1,0 +1,609 @@
+<style>
+    ol {
+        list-style: none;
+    }
+    .typeA{
+        list-style: initial;
+        list-style-type: lower-alpha;
+    }
+</style>
+<h3 align="center">CÉDULA DE CŔEDITO BANCÁRIO Nº <span class="cedula token_d4s">[cedula]</span>&nbsp;</h3>
+<table width="100%" border="1px solid black">
+    <tbody>
+    <tr>
+        <td>(<span class="via_negociavel token_d4s">[via_negociavel]</span>&nbsp;) Via negociável</td>
+        <td>(<span class="via_nao_negociavel token_d4s">[via_nao_negociavel]</span>&nbsp;) Via não negociável</td>
+    </tr>
+    <tr>
+        <td colspan="2"><b>QUADRO I - EMITENTE</b></td>
+    </tr>
+    <tr>
+        <td><b>1.1 Emitente</b> <span class="emitente_nome token_d4s">[emitente_nome]</span>&nbsp;</td>
+        <td><b>1.2 CPF/MF</b> <span class="emitente_cpf token_d4s">[emitente_cpf]</span>&nbsp;</td>
+    </tr>
+    <tr>
+        <td colspan="2"><b>1.3 Estado Civil</b> <span
+                class="emitente_estado_civil token_d4s">[emitente_estado_civil]</span>&nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <b>1.3 Conta corrente para cŕedito dos recursos oriundos desta Cédula</b><br>
+            Banco: <span class="banco token_d4s">[banco]</span>&nbsp; Agência: <span
+                class="agencia token_d4s">[agencia]</span>&nbsp; Conta: <span class="conta token_d4s">[conta]</span>&nbsp;
+        </td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<table width="100%" border="1px solid black">
+    <tbody>
+    <tr>
+        <td colspan="2"><b>QUADRO II - CREDOR ORIGINÁRIO</b></td>
+    </tr>
+    <tr>
+        <td width="50%">
+            <b>2.1 Instituição financeira credora</b><br>
+            <span class="instituicao_credora token_d4s">[instituicao_credora]</span>&nbsp;
+        </td>
+        <td>
+            <b>2.2 CPF/MF</b><br>
+            <span class="credor_cpf token_d4s">[credor_cpf]</span>&nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <b>2.3 Endereço</b><br>
+            <span class="credor_endereco token_d4s">[credor_endereco]</span>&nbsp;
+        </td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<table width="100%" border="1px solid black">
+    <tbody>
+    <tr>
+        <td colspan="2"><b>QUADRO III - CARACTERÍSTICAS DA CÉDULA</b></td>
+    </tr>
+    <tr>
+        <td width="33%">
+            <b>3.1 Valor do Principal</b><br>
+            <b>R$</b> <span class="valor_principal token_d4s">[valor_principal]</span>&nbsp;
+        </td>
+        <td colspan="2">
+            <b>3.2 Prazo</b><br>
+            <span class="prazo token_d4s">[prazo]</span>&nbsp;meses
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>3.3 Tarifas de Contratação</b><br>
+            TC-Tarifa de cadastro: R$ 0,00
+        </td>
+        <td colspan="2">
+            <b>3.4 Vencimento final</b><br>
+            <span class="vencimento_final token_d4s">[vencimento_final]</span>&nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>3.5 Encargos</b><br>
+            (X) pré-fixados ( ) pós-fixados
+        </td>
+        <td colspan="2">
+            <b>3.6 Taxa de juros Pré-fixada:</b><br>
+            <span class="taxa_juros token_d4s">[taxa_juros]</span>&nbsp;%a.m.
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="3">
+            Diária, com base em um ano de 365 (trezentos e sessenta e cinco) dias
+            <b>Incidência/Periodicidade dos Encargos Remuneratórios:</b> Sobre cada valor de Principal a ser Amortizado
+            no período compreendido entre a Data de Emissão e Data de Vencimento
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>3.8 Forma de pagamento</b><br>
+            Boleto
+        </td>
+        <td>
+            <b>3.9 Quantidade de parcelas</b><br>
+            <span class="quant_parcelas token_d4s">[quant_parcelas]</span>&nbsp;
+        </td>
+        <td>
+            <b>3.10 Valor da parcela</b><br>
+            R$ <span class="valor_parcela token_d4s">[valor_parcela]</span>&nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>3.11 Valor do IOF</b><br>
+            R$ <span class="iof token_d4s">[iof]</span>&nbsp;
+        </td>
+        <td>
+            <b>3.12 Praça de pagamento</b><br>
+            <span class="praca_pagamento token_d4s">[praca_pagamento]</span>&nbsp;
+        </td>
+        <td>
+            <b>3.13 Local de emissão</b><br>
+            <span class="cidade token_d4s">[cidade]</span>&nbsp; - <span class="uf token_d4s">[uf]</span>&nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>3.14 Data de emissão</b><br>
+            <span class="data_emissao token_d4s">[data_emissao]</span>&nbsp;
+        </td>
+        <td>
+            <b>3.15 Número da cédula</b><br>
+            <span class="numero_cedula token_d4s">[numero_cedula]</span>&nbsp;
+        </td>
+        <td>
+            <b>3.16 Custo efetivo total (CET)</b><br>
+            <span class="cet token_d4s">[cet]</span>&nbsp;%a.m.
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>3.17 Data de Desembolso</b><br>
+            <span class="data_desembolso token_d4s">[data_desembolso]</span>&nbsp;
+        </td>
+        <td colspan="2">
+            <b>3.18 Valor Líquido de Principal</b><br>
+            R$ <span class="valor_liquido token_d4s">[valor_liquido]</span>&nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <b>3.19 Data do Pagamento:</b> A primeira parcela do pagamento será no dia <span
+                class="data_primeira_parcela token_d4s">[data_primeira_parcela]</span>&nbsp;,
+            sendo os outros pagamentos no mesmo dia dos meses subsequentes. Caso algum dia seja feriado
+            ou final de semana, a data de vencimento passará para o dia útil subsequente.
+        </td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<h3 align="center"> IV - TERMOS E CONDIÇÕES GERAIS</h3>
+<p style="text-align: justify;">Nas datas indicadas no Quadro III, item 3.19, o EMITENTE pagará por esta Cédula
+    de Crédito Bancário (“Cédula”) ao Credor (doravante denominado “CREDOR” primário e, na hipótese de endosso
+    desta Cédula a um terceiro “Credor”) ou à sua ordem, na praça de pagamento indicada no Quadro III, item 3.12,
+    em moeda corrente nacional, a quantia líquida, certa e exigível de principal acrescida dos encargos previstos
+    nesta Cédula, nos termos da Lei Federal nº 10.931/2004 e dos demais normativos pertinentes, atendendo em especial
+    ao disposto nas cláusulas e condições enunciadas a seguir:
+</p>
+<ol class="nested" style="padding: 0;">
+    <h3>CLÁUSULA PRIMEIRA - OBJETO</h3>
+    <li class="nested">
+        <ol class="nested" style="padding: 0;">
+            <li class="nested">1.1. O EMITENTE emite a presente Cédula em favor da CREDOR, e promete pagar ao CREDOR, ou
+                à
+                sua ordem,
+                em moeda
+                corrente nacional, por meio de débito automático na conta corrente indicada no item 1.5 do Quadro I, a
+                importância indicada nos termos do Quadro III, item 3.1, acrescido dos encargos e tributos.
+                <ol class="nested">
+                    <li class="nested">1.1.1. O CREDOR somente liberará os recursos relacionados a esta Cédula após a
+                        devida conferência da
+                        veracidade das informações prestadas pelo EMITENTE, que desde já isenta o CREDOR de culpa por
+                        qualquer
+                        atraso por informações incorretas ou incompletas fornecidas pelo EMITENTE.
+                    </li>
+                    <li class="nested">1.1.2. Constitui condição suspensiva para a eficácia desta Cédula, nos termos do
+                        artigo 125 do
+                        Código Civil, a liberação da totalidade dos recursos pelo CREDOR na conta corrente indicada
+                        pelo EMITENTE no Quadro I, item 1.5 (“Condição Suspensiva”). Na hipótese de a Condição
+                        Suspensiva não ocorrer em até 10 (dez) dias após a emissão desta CCB, a presente Cédula não
+                        será revestida de eficácia e se extinguirá de pleno direito, sem qualquer ônus ou penalidade
+                        para qualquer das partes.
+                    </li>
+                </ol>
+            </li>
+            <li class="nested">1.2. A taxa de juros, tarifas e demais encargos financeiros incidirão sobre todos os
+                valores e despesas
+                incorridas pelo CREDOR, em decorrência das disposições desta Cédula, notadamente impostos e
+                contribuições devidos pelo EMITENTE pelas operações financeiras realizadas.
+            </li>
+            <li class="nested">1.3. O EMITENTE autoriza o CREDOR a efetuar os seguintes débitos: (a) juros legais, juros
+                de mora,
+                juros remuneratórios, multa legal, despesas para manutenção do crédito, honorários advocatícios
+                e todas as demais despesas administrativas, tributárias e/ou financeiras; (b) Imposto sobre Operações
+                de Crédito, igualmente autorizando o CREDOR a (c) utilizar o saldo de qualquer espécie de conta para
+                liquidação ou amortização da dívida resultante desta Cédula, bem como das tarifas, despesas, juros
+                e encargos financeiros nela referidos.
+            </li>
+            <li class="nested">1.4. Após a dedução dos tributos e encargos que forem devidos antecipadamente, conforme o
+                caso, o
+                Valor Liquido de Principal indicado no Preâmbulo desta Cédula será creditado diretamente, por
+                conta e ordem do EMITENTE, na conta corrente indicada no Quadro I, item 1.5, no Preâmbulo desta
+                Cédula, sendo que a data de liberação do crédito nesta Cédula será considerada, para fins desta
+                Cédula, como a “Data do Desembolso”.
+                <ol class="nested">
+                    <li class="nested">1.4.1. O crédito será disponibilizado por meio de Transferência Eletrônica
+                        Disponível (“TED”),
+                        emitida pelo credor nos termos da regulamentação aplicável.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+    <h3>CLÁUSULA SEGUNDA - DO PAGAMENTO</h3>
+    <li class="nested">
+        <ol class="nested" style="padding: 0;">
+            <li class="nested">2.1. O EMITENTE se obriga a pagar ao CREDOR o valor indicado no Quadro III, item 3.1, no
+                prazo, na forma,
+                e local indicados no Quadro III, acrescido das despesas, taxas e tarifas, e, quando aplicável, dos
+                encargos
+                moratórios incidentes.
+                <ol class="nested">
+                    <li class="nested">2.1.1. Os juros ajustados nesta Cédula serão calculados na forma exponencial e
+                        capitalizados na
+                        periodicidade diária, com base em um ano de 365 (trezentos e sessenta e cinco) dias,
+                        conforme autoriza o item II, do parágrafo 1º do artigo 28 da Lei 10.931/04.
+                    </li>
+                </ol>
+            </li>
+            <li class="nested">2.2. Caso o EMITENTE deseje antecipar a quitação de qualquer parcela ou do saldo devedor
+                integral
+                da dívida representada por esta Cédula, o EMITENTE deverá solicitar ao CREDOR que informe o saldo
+                devedor integral ou de referida parcela, acrescido dos valores necessários ao ressarcimento ao CREDOR
+                dos custos destinados a pagamentos de serviços de terceiros.
+            </li>
+            <li class="nested">2.3. O EMITENTE autoriza, em caráter irrevogável e irretratável, que sejam levadas a
+                débito na conta indicada
+                no item 1.5 do Quadro I, quaisquer importâncias devidas ou que venham a se tornar devidas, a título de
+                principal e acessórios, quaisquer encargos e acréscimos, juros moratórios, multas, honorários
+                advocatícios,
+                atributos, despesas e demais cominações expressas nesta Cédula. Todas e quaisquer despesas, inclusive
+                encargos fiscais de qualquer natureza, incidentes e/ou decorrentes do cumprimento da estipulação
+                constante
+                da presente Cédula, correrão por conta e sob exclusiva responsabilidade da Emitente, devendo o
+                respectivo
+                importe, uma vez apurado, ser acrescido ao débito tal deste último.
+            </li>
+            <li class="nested">2.4. Caso, na data de vencimento de qualquer das parcelas, não haja saldo suficiente para
+                seu pagamento,
+                o EMITENTE autoriza, desde já e em caráter irrevogável e irretratável, o CREDOR a realizar subsequentes
+                tentativas de débito, em datas diferentes e posteriores a de vencimento, com a finalidade de
+                adimplemento
+                da parcela, sendo permitido, inclusive, o débito de valores inferiores ao da parcela em aberto, até a
+                sua
+                completa quitação.
+            </li>
+        </ol>
+    </li>
+    <h3>CLÁUSULA TERCEIRA - DOS ENCARGOS REMUNERATÓRIOS</h3>
+    <li class="nested">
+        <ol class="nested" style="padding: 0">
+            <li class="nested">3.1. O EMITENTE reconhece ser de sua inteira responsabilidade as despesas, taxas,
+                tarifas, encargos e
+                tributos incidentes sobre quantia disponibilizada pelo CREDOR, a contar da Data da Desembolso, no
+                prazo e forma declarada no Quadro III, itens 3.2 e 3.7.
+            </li>
+            <li class="nested">3.2. Os encargos serão apurados de acordo com os juros indicados no Quadro III, item 3.6.
+            </li>
+            <li class="nested">3.3. Além dos encargos acima mencionados, o EMITENTE pagará o Imposto sobre Operações
+                Financeiras
+                (IOF) indicado no Quadro III, item 3.11, que será calculado conforme a legislação vigente.
+            </li>
+        </ol>
+    </li>
+    <h3>CLÁUSULA QUARTA - DOS ENCARGOS MORATÓRIOS</h3>
+    <li class="nested">
+        <ol class="nested" style="padding: 0">
+            <li class="nested">4.1. Sem prejuízo do disposto nas cláusulas precedentes e da imediata exigibilidade da
+                dívida,
+                independentemente de qualquer aviso ou notificação judicial ou extrajudicial, a falta de
+                pagamento dos valores devidos pelo EMITENTE, incluindo principal e acessório, nas datas convencionadas,
+                importará na cobrança dos encargos de mora legalmente permitidos, inclusive juros de 1% (um por cento)
+                ao mês linear ou fração, multa contratual não compensatória de 2% (dois por cento) calculada sobre o
+                valor atualizado do débito e os encargos remuneratórios previstos no Quadro III, item 3.6, pelos dias
+                de atraso na liquidação da operação.
+            </li>
+            <li class="nested">4.2. Na hipótese de o CREDOR vir a ser compelido a recorrer a meios administrativos ou
+                judiciais para
+                receber o seu crédito, serão devidos honorários advocatícios, desde já fixados em 10% (dez por cento)
+                sobre o valor do débito em caso de cobrança extrajudicial e 20% (vinte por cento) em caso de cobrança
+                na esfera judicial, além de todas as despesas de cobrança, inclusive custas judiciais.
+            </li>
+        </ol>
+    </li>
+    <h3>CLÁUSULA QUINTA - VENCIMENTO ANTECIPADO</h3>
+    <li class="nested">
+        <ol class="nested" style="padding: 0">
+            <li class="nested">5.1. O CREDOR poderá considerar o vencimento antecipado das obrigações assumidas nesta
+                Cédula,
+                sendo imediatamente exigíveis como dívida líquida e certa, a totalidade do valor principal,
+                acrescido das taxas, tarifas e encargos devidos, independentemente de qualquer aviso ou notificação
+                judicial ou extrajudicial, para efeitos do artigo 397 do Código Civil, na ocorrência de quaisquer
+                dos seguintes eventos, além daqueles previstos em lei:
+                <ol class="typeA" type="a">
+                    <li>
+                        Descumprimento de qualquer das cláusulas ou obrigações assumidas pelo EMITENTE nesta Cédula em
+                        relação às condições e obrigações determinadas, pecuniárias ou não pecuniárias;
+                    </li>
+                    <li>
+                        Inadimplemento pelo EMITENTE de qualquer de suas obrigações assumidas junto ao CREDOR,
+                        decorrente
+                        de outras relações jurídicas, contratos ou empréstimos com o CREDOR e/ou com qualquer outra
+                        empresa pertencente ao seu grupo econômico;
+                    </li>
+                    <li>
+                        Transferência, cessão de qualquer forma ou promessa de cessão a terceiros, pela EMITENTE,
+                        dos direitos e obrigações assumidos nesta Cédula, sem o consentimento prévio por escrito do
+                        CREDOR;
+                    </li>
+                    <li>
+                        sofrer(em) qualquer protesto de títulos ou for(em) negativados em quaisquer cadastros dos órgãos
+                        de proteção ao crédito, como SPC e SERASA, Cadastro de Emitentes de Cheques sem Fundo - CCF ou
+                        Sistema de Informações de Crédito do Banco Central, cujo valor individual ou agregado seja
+                        superior a 5 (cinco) vezes o valor do principal previsto no item 3.1 acima e que não seja(m)
+                        devidamente sustado(s) ou levantado(s) por medida judicial ou extrajudicial em até 5 (cinco)
+                        dias úteis contados do efetivo protesto ou negativação, ou torne(m)-se inadimplente(s) ou
+                        incorra(m)
+                        em mora em outra operação que tenha&nbsp; qualquer outra instituição financeira como contraparte
+                        em
+                        valor individual ou agregado superior a 5 (cinco) vezes o valor do principal previsto no item
+                        3.1 acima;
+                    </li>
+                    <li>
+                        Ocorrência das hipóteses previstas nos artigos 333 e 1.425 do Código Civil;
+                    </li>
+                    <li>
+                        Propositura de qualquer medida judicial ou administrativa em face do EMITENTE cujo valor
+                        individual
+                        ou agregado seja superior a 5 (cinco) vezes o valor do principal previsto no item 3.1 acima e
+                        que, a
+                        critério da CREDOR, possa colocar em risco o cumprimento das obrigações assumidas nesta Cédula;
+                    </li>
+                    <li>
+                        Morte ou requisição de falência, insolvência civil, recuperação judicial ou extrajudicial;
+                    </li>
+                    <li>
+                        Caso seja apurada a falsidade ou imprecisão de qualquer declaração, informação ou documento que
+                        houver sido, respectivamente, firmada, prestada ou entregue pelo EMITENTE, incluindo, mas não se
+                        limitando, à sua condição econômico-financeira;
+                    </li>
+                    <li>
+                        Caso realize a alienação, cessão, doação, contribuição ao capital social ou a transferência,
+                        por qualquer meio, de bens, ativos ou direitos de sua propriedade cujo valor individual ou
+                        agregado seja superior a 5 (cinco) vezes o valor do principal previsto no item 3.1 acima e que,
+                        no entendimento do CREDOR, possa levar ao descumprimento de obrigações previstas nesta Cédula;
+                    </li>
+                    <li>
+                        Se o EMITENTE sofrer, a critério do CREDOR, mudança adversa em sua situação patrimonial e/ou
+                        financeira;
+                    </li>
+                    <li>
+                        Se o EMITENTE ingressar em juízo contra o CREDOR ou quaisquer empresas integrantes das sua(s)
+                        organização(ões) com qualquer medida judicial; e/ou
+                    </li>
+                    <li>
+                        Caso o EMITENTE, no todo ou em parte, conteste a validade desta Cédula e de seus termos e
+                        condições.
+                    </li>
+                </ol>
+            </li>
+            <li class="nested">5.2. Para os fins de que trata esta Cédula, “Data de Vencimento Antecipado” será a data
+                de ocorrência de
+                qualquer dos eventos acima, independentemente de qualquer notificação judicial ou extrajudicial.
+            </li>
+            <li class="nested">5.3. Em caso de vencimento antecipado desta Cédula, o EMITENTE obriga-se a efetuar o
+                pagamento do
+                saldo devedor desta Cédula, calculada pro rata temporis desde a Data de Desembolso até a Data
+                de Vencimento Antecipado, e de quaisquer outros valores eventualmente devidos pelo EMITENTE nos
+                termos desta Cédula, em moeda corrente nacional, em até 5 (cinco) dias úteis contados da Data
+                de Vencimento Antecipado, sob pena de, não o fazendo, ficar obrigado, ainda, ao pagamento dos
+                encargos moratórios previstos no item 4.1. acima.
+            </li>
+        </ol>
+    </li>
+    <h3>CLÁUSULA SEXTA - DECLARAÇÕES DO EMITENTE</h3>
+    <li class="nested">
+        <ol class="nested" style="padding: 0">
+            <li class="nested">6.1. O EMITENTE declara e garante que:
+                <ol class="typeA" type="a">
+                    <li>
+                        Possui plena capacidade e legitimidade para emitir a presente Cédula, realizar todas
+                        as operações e cumprir todas as obrigações aqui assumidas, tendo tomado todas as medidas
+                        necessárias para implementação e cumprimento de todas as obrigações constituídas;
+                    </li>
+                    <li>
+                        Está apto a cumprir as obrigações ora previstas nesta Cédula e agirá em relação a estas
+                        de boa-fé e com lealdade;
+                    </li>
+                    <li>
+                        Não se encontra em estado de necessidade ou sob coação para emitir esta CCB e/ou
+                        quaisquer contratos e compromissos a ela relacionados e acessórios;
+                    </li>
+                    <li>
+                        Está ciente que: (i) o CREDOR integra o Sistema Financeiro Nacional, submetendo-se
+                        à disciplina e regras ditadas pelo Conselho Monetário Nacional e Banco Central do
+                        Brasil; e (ii) as taxas de juros cobradas e praticadas pela CREDOR nas operações
+                        financeiras realizadas por ela não estão submetidas ao limite de 12% (doze por cento)
+                        ao ano, como já decidiu o Supremo Tribunal Federal, sendo legítima a cobrança de
+                        juros e encargos superiores a esse percentual;
+                    </li>
+                    <li>
+                        Está ciente e de acordo que o presente título é emitido unilateralmente e,
+                        consequentemente, não há necessidade de assinatura do CREDOR e de testemunhas,
+                        sendo considerado título extrajudicial nos termos da Lei nº 10.931/2004;
+                    </li>
+                    <li>
+                        Está ciente de que a eficácia desta Cédula está sujeita à verificação da
+                        Condição Suspensiva. Dessa forma, sendo atendida a Condição Suspensiva, esta
+                        Cédula ganhará eficácia e poderá ser endossada pelo CREDOR, sendo certo que todos
+                        estão plenamente cientes e de acordo que referido endosso não se trata de distribuição
+                        pública de valores mobiliários assim entendida nos termos da Lei no 6.385, de 7
+                        de dezembro de 1976;
+                    </li>
+                    <li>
+                        Adotará todas as providências para manter válidas e eficazes as declarações contidas
+                        nesta Cédula, mantendo o CREDOR informado de qualquer ato ou fato que possa afetar
+                        a validade de qualquer das referidas declarações e adotando as medidas cabíveis para
+                        sanar ou evitar a invalidade de tais declarações;
+                    </li>
+                    <li>
+                        Não é uma pessoa politicamente exposta. Para efeitos da presente disposição uma
+                        "pessoa politicamente exposta" significa uma pessoa que é ou foi nomeada nos últimos
+                        5 (cinco) anos, bem como seus representantes, familiares e pessoas de seu relacionamento
+                        próximo no Brasil ou em qualquer outro país, território e dependências com qualquer
+                        cargo, função pública proeminente, ou posição, incluindo, sem limitação, chefe de
+                        estado ou de governo, altas nomeações políticas, altos cargos do serviço civil, altos
+                        postos judiciais ou militares e chefes de qualquer empresa detida por órgãos
+                        governamentais ou partidos políticos;
+                    </li>
+                    <li>
+                        Responsabiliza-se a manter seu endereço constantemente atualizado perante o CREDOR,
+                        para efeito de comunicação sobre qualquer ato ou fato decorrente desta Cédula;
+                    </li>
+                    <li>
+                        Tem plena ciência e concorda integralmente com as taxas de juros, dos encargos e
+                        demais condições financeiras desta Cédula, sendo que reconhecem que a forma de
+                        cálculo de tais condições foi acordada por sua livre vontade, em observância
+                        ao princípio da boa-fé;
+                    </li>
+                    <li>
+                        Leu previamente a presente Cédula e não tem dúvidas sobre qualquer de suas condições; e
+                    </li>
+                    <li>
+                        Está na posse de uma via eletrônica não negociável desta cédula e emitiu a via
+                        negociável eletrônica ao CREDOR, assim como tem ciência dos termos da Lei nº
+                        10.931/2004, especialmente seus artigos 26 e 28.
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </li>
+    <h3>CLÁUSULA SÉTIMA - DISPOSIÇÕES GERAIS</h3>
+    <li class="nested">
+        <ol class="nested" style="padding: 0;">
+            <li class="nested">7.1. O CREDOR poderá ceder a terceiros, no todo ou em parte, os créditos e/ou outros
+                direitos
+                decorrentes desta Cédula, independentemente de qualquer aviso ou autorização de qualquer espécie,
+                na forma da legislação em vigor, sem coobrigação do CREDOR, mediante endosso em preto, ao qual
+                se aplicarão, no que couberem, as normas do direito cambiário, caso em que o endossatário,
+                mesmo não sendo instituição financeira ou entidade a ela equiparada, poderá exercer todos os
+                direitos por ela conferidos, inclusive cobrar juros e demais encargos na forma pactuada nesta
+                Cédula.
+                <ol class="nested">
+                    <li class="nested">7.1.1. O EMITENTE fica vedado de ceder suas obrigações e direitos decorrentes
+                        desta Cédula
+                        sem a prévia e expressa autorização do CREDOR ou do endossatário desta Cédula.
+                    </li>
+                </ol>
+            </li>
+            <li class="nested">7.2. O EMITENTE autoriza o CREDOR, em caráter irrevogável e irretratável e na forma da
+                regulamentação aplicável, a: (a) transmitir e consultar informações sobre ele e/ou relativas
+                a esta operação à Central de Risco de Crédito mantida pelo Banco Central do Brasil; (b)
+                levar a registro esta Cédula em quaisquer órgãos públicos, cartórios e instituições de custódia
+                e liquidação financeira de títulos, tais como a Central de Custódia e Liquidação Financeira
+                de Títulos – CETIP; e (c) em caso de inadimplemento, inserir o nome do EMITENTE em bancos
+                públicos ou privados de restrição cadastral e proteção ao crédito.
+            </li>
+            <li class="nested">7.3. O EMITENTE declara ainda que foi prévia e devidamente informado da cobrança e dos
+                exatos
+                valores que compõem o Custo Efetivo Total (“CET”), indicado no Quadro III, item 3.16,
+                bem como que a taxa percentual
+                <ol class="nested">
+                    <li class="nested">7.3.1. O CREDOR poderá disponibilizar ao EMITENTE, sempre que solicitado, a
+                        composição
+                        do CET e a sua fórmula de cálculo.
+                    </li>
+                </ol>
+            </li>
+            <li class="nested">7.4. O EMITENTE reconhece que a dívida decorrente da presente Cédula é líquida, certa e
+                exigível,
+                cobrável por meio de ação de execução, todos os lançamentos efetuados pelo CREDOR em sua
+                escrituração mercantil quanto ao objeto da presente Cédula.
+            </li>
+            <li class="nested">7.5. A presente Cédula poderá ser alterada ou modificada, no todo ou em parte, somente
+                por
+                escrito e mediante acordo, que o farão por Termos Aditivos, que passarão a fazer parte
+                integrante desta Cédula.
+            </li>
+            <li class="nested">7.6. A Cédula e todos os seus eventuais Anexos constituem o acordo integral, substituindo
+                quaisquer entendimentos ou acordos anteriores.
+            </li>
+            <li class="nested">7.7. O não exercício, por qualquer das partes, de direitos relativos à presente Cédula
+                será
+                considerado como mera liberalidade e tolerância, não representando, em hipótese alguma,
+                novação, revogação ou renúncia aos mesmos ou direito de exigi-los no futuro.
+            </li>
+            <li class="nested">7.8. A renúncia por qualquer das partes de qualquer direito previsto nesta Cédula deverá
+                ser expressa e manifestada por escrito, bem como eventual concessão dada por qualquer
+                das partes não será tratada como uma variação desta Cédula, salvo se expressamente
+                manifestada por escrito como alteração, em conformidade ao previsto nesta cláusula.
+            </li>
+            <li class="nested">7.9. Todas as notificações, demandas ou comunicações a serem trocadas entre as partes
+                poderão ser entregues pessoalmente, mediante recibo, enviadas por correspondência
+                registrada em mão própria aos respectivos representantes nomeados neste instrumento
+                particular, na forma do artigo 997, inciso I, do Código Civil, ou ainda de forma eletrônica,
+                através do endereço eletrônico das partes.
+            </li>
+            <li class="nested">7.10. O EMITENTE concorda que caso qualquer disposição da presente Cédula seja
+                considerada ou
+                declarada nula ou inexequível, as demais disposições não serão por ela afetadas,
+                permanecendo, portanto, válidas e eficazes. Nesse caso, o EMITENTE estará liberado de
+                cumprir as obrigações resultantes da disposição que contém vício, devendo, porém, empregar
+                seus melhores esforços visando substituir a disposição nula ou inexequível por outra,
+                que, não contendo os vícios daquela, permita atingir, o mais próximo possível, o
+                resultado originalmente pretendido por elas.
+            </li>
+            <li class="nested">7.11. A aceitação, por quaisquer das partes, EMITENTE ou CREDOR, de ação, omissão ou não
+                cumprimento de quaisquer das obrigações aqui avençadas pela outra parte, será considerada
+                mera liberalidade, não implicando em novação dos termos desta Cédula, nem em renúncia
+                ao direito de exigir da outra o cumprimento integral desta Cédula, a qualquer tempo.
+            </li>
+            <li class="nested">7.12. O EMITENTE declara neste ato que tem conhecimento e concorda inteiramente com os
+                termos do Código de Ética do CREDOR, que passa a fazer parte integrante deste Contato
+                e não vai se envolver em qualquer ato ou omissão no cumprimento das responsabilidades
+                estabelecidas no referido Código de Ética do CREDOR. Mediante notificação prévia, o
+                EMITENTE outorga o direito de realizar procedimento de auditoria para certificar-se da
+                conformidade contínua com as declarações e garantias dadas.
+            </li>
+            <li class="nested">7.13. O EMITENTE, autoriza desde já e expressamente, em caráter irrevogável e
+                irretratável,
+                o CREDOR a proceder à compensação de que trata o artigo 368 do Código Civil entre o
+                débito decorrente desta Cédula e qualquer crédito do qual sejamos titulares, existente
+                ou que venha a existir, vencido ou vincendo e do qual seja devedor o CREDOR,
+                representados inclusive, mas não taxativamente, por títulos ou valores mobiliários,
+                títulos de renda fixa, saldos em conta de livre movimentação ou qualquer outro título
+                ou obrigação, o que será aplicável em qualquer hipótese, mesmo em liquidação judicial
+                ou extrajudicial do CREDOR. Sendo certo que no caso de qualquer inadimplemento, total
+                ou parcial, e/ou de vencimento antecipado de obrigações da EMITENTE, decorrentes de
+                qualquer instrumento ou título, inclusive, sem limitação, da presente Cédula, serão
+                consideradas extintas, de pleno de direito, as obrigações líquidas e vencidas
+                (antecipadamente ou não) do CREDOR para com a EMITENTE, até o montante em que se
+                compensarem com obrigações líquidas e vencidas (antecipadamente ou não) da EMITENTE
+                para com o CREDOR e decorrentes dos mesmos instrumentos ou títulos, inclusive sem
+                limitação, da presente Cédula, tudo independentemente de aviso prévio ou notificação
+                de qualquer natureza. Fica desde já esclarecido que a compensação parcial não exonerará
+                a Emitente e/ou o(s) garantidor(es) real(is) ou pessoal(ais), inclusive sem limitação,
+                fiadores, pessoas físicas ou jurídicas, os quais continuarão responsáveis pelo saldo
+                remanescente de suas obrigações e respectivos acréscimos, até a quitação total junto
+                ao CREDOR.
+            </li>
+            <li class="nested">7.14. O EMITENTE reconhece como válida, eficaz e vinculante a presente CCB, emitida em
+                suporte eletrônico, sendo assinada mediante aceite eletrônico, conforme atividades
+                registradas na plataforma digital do Correspondente Bancário do CREDOR, na qual
+                se autenticou por meio da coleta de seus dados bancários (dados da instituição
+                financeira, número de agência bancária, número de conta e senha de acesso online
+                da instituição bancária) com anuência do CREDOR, declarando ainda que reconhece
+                a presente forma de contratação como válida e plenamente eficaz, conforme autorizado
+                pelo § 2º do art. 10 e seus parágrafos da Medida Provisória nº 2.200/2001.
+            </li>
+            <li class="nested">7.15. Fica eleito como competente para conhecer e dirimir quaisquer dúvidas ou questões
+                que, porventura, venham a decorrer desta Cédula, o Foro da Comarca de Sorocaba -
+                SP, podendo, ainda, ser o mesmo Foro determinado pela Comarca onde é firmado o
+                presente instrumento.
+            </li>
+        </ol>
+    </li>
+</ol>
+<br>
+<p align="center"><span class="local_cidade token_d4s">[local_cidade]</span> - <span class="local_uf token_d4s">[local_uf]</span>&nbsp;,
+    <span class="data token_d4s">[data]</span></p><br><br>
+<p align="center" style="border-top: 1px solid black; margin-left: 30%; margin-right: 30%;"><b>EMITENTE</b></p>

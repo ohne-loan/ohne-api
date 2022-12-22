@@ -1,0 +1,1 @@
+CREATE INDEX idx_user_register_statuses_status ON user_register_statuses(status);

@@ -1,0 +1,10 @@
+.tag {
+    background-color: #d9d9d9;
+    color: #212121;
+    font-size: 79%;
+}
+
+.tag[href]:hover {
+    background-color: #888686;
+    color: #fff;
+}
